@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotos com HTML</title>
+</head>
+<body>
+    <h1>Imagens Dinamicas</h1>
+    <p>Tente abrri esse site em diversos dispostivos</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-pequena.png" type="image/png">
+        <source media="(max-width: 10050px )" srcset="imagens/foto-media.png" type="image/png">
+        <img src="imagens/foto-grande.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Adicionando e reproduzindo Áudio</h1>
+    <p>Vamos aprender a repodruzir áudios em HTML5</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/i wish i knew McDonald.mp3" type="audio/mpeg">
+        <source src="midia/i wish i knew McDonald.ogg" type="audio/ogg">
+        <source src="midia/i wish i knew McDonald.wav" type="audio/wav">
+        <source src="midia/i wish i knew McDonald.wma" type="audio/wma">
+        <p>Infelizmente seu navegador não consegue reproduzir audios <a href="midia/i wish i knew McDonald.mp3">baixe o arquivo</a></p>
+    </audio>
+</body>
+</html>
